@@ -38,13 +38,28 @@ header {
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
-    letter-spacing: 1px;
 }
 
-#menu {
+#toggle-pause {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+}
+
+.pause {
     fill: white;
     width: 1.5rem;
     height: 1.5rem;
+    pointer-events: none;
+    position: absolute;
+}
+
+.play {
+    fill: rgb(255, 255, 255);
+    pointer-events: none;
+    position: absolute;
+    transform: scale(2);
+    display: none;
 }
 
 main {
@@ -141,8 +156,14 @@ footer {
     margin-right: 1rem;
 }
 
+.background-reference {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 0.8rem
+}
+
 #social,
 #logo, 
-#menu:hover {
+#toggle-pause:hover {
     cursor: pointer;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -68,6 +68,7 @@ main {
     max-width: 600px;
     margin-left: 5rem;
     z-index: 1;
+    display: none;
 }
 
 .hero {
@@ -166,4 +167,38 @@ footer {
 #logo, 
 #toggle-pause:hover {
     cursor: pointer;
+}
+
+.form {
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    top: 7rem;
+    padding: 2rem;
+    left: 100px;
+    max-width: 700px;
+    background: #fff;
+    color: black;
+    border: 1px solid rgb(126, 108, 108);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.form-input {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.travel-reason {
+    border: none;
+}
+
+.travel-reason label {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.form a {
+    color: black;
 }

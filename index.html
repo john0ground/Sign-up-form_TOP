@@ -11,7 +11,7 @@
 <body>
     <header>
         <p id="logo">G Travels</p>
-        <div id="toggle-pause">
+        <div id="toggle-pause" title="toggle background motion">
             <svg class="pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M36.65.8A3.24 3.24 0 0 0 33.41 4V44a3.24 3.24 0 0 0 6.48 0V4A3.24 3.24 0 0 0 36.65.8zM11.35.8A3.24 3.24 0 0 0 8.11 4V44a3.24 3.24 0 0 0 6.48 0V4A3.24 3.24 0 0 0 11.35.8z"/></svg>
             <svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"/></svg>
         </div>    
@@ -34,6 +34,78 @@
 
         <p class="account-log-in">Already have an account? <span><a href="https://www.noggin.com/noggin-dora-the-explorer/" target="_blank">Log in</a></span></p>
     </main>
+
+    <form action="" class="form">
+        <p>Sign up to start your adventure.</p>
+        <div class="form-input">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-input">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-input">
+            <label for="destination">Destination</label>
+            <select name="destination" id="destination" required>
+                <option value="france">France</option>
+                <option value="spain">Spain</option>
+                <option value="united-states">United-States</option>
+                <option value="china">China</option>
+                <option value="italy">Italy</option>
+                <option value="japan">Japan</option>
+                <option value="thailand">Thailand</option>
+                <option value="germany">Germany</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="turkey">Turkey</option>
+            </select>
+        </div>
+        <fieldset class="travel-reason">
+            <legend>Reason for travel (optional)</legend>
+            <label>
+                <input type="checkbox" name="travel-reason" id="reason-1">
+                I just want to travel.
+            </label>
+            <label>
+                <input type="checkbox" name="travel-reason" id="reason-2">
+                Vacation
+            </label>
+            <label>
+                <input type="checkbox" name="travel-reason" id="reason-3">
+                An influencer told me.
+            </label>
+            <label for="checkbox">
+                <input type="checkbox" name="travel-reason" id="reason-4">
+                Underage kid from pokemon motivated me.
+            </label>
+            <label>
+                <input type="checkbox" name="travel-reason" id="reason-5" checked>
+                My husky's been whining lately.
+            </label>
+            <label>
+                <input type="checkbox" name="travel-reason" id="reason-6">
+                I've never seen a flight attendant.
+            </label>
+            <label>
+                <input type="checkbox" name="travel-reason" id="reason-7">
+                Think back about marriage decision.
+            </label>
+        </fieldset>
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="form-input">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+        </div>
+        <button>Create Account</button>
+        <p>Already have an account? <a href="https://www.noggin.com/noggin-dora-the-explorer/" target="_blank">Log in</a></p>
+    </form>
 
     <footer>
         <div class="socials">

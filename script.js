@@ -16,3 +16,12 @@ function playPause(e) {
         pause.style.display = 'none';
     }
 }
+
+const createAccountBtn = document.getElementById('create-account');
+const main = document.querySelector('main');
+
+createAccountBtn.addEventListener('click', () => {
+    main.style.display = 'none';
+});
+
+

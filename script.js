@@ -17,13 +17,26 @@ function playPause() {
     }
 }
 
+//createAccount btn from <main>, open form
 const createAccount = document.getElementById('create-account');
 const main = document.querySelector('main');
+const form = document.querySelector('.form');
+const footer = document.querySelector('footer');
 
 createAccount.addEventListener('click', () => {
     main.style.display = 'none';
+    form.style.display = 'grid';
+    footer.style.position = 'relative';
+    footer.style.top = '150px';
 });
 
+//close form
+const closeIcon = document.getElementById('close');
+closeIcon.addEventListener('click', () => {
+    form.style.display = 'none';
+    main.style.display = 'block';
+    footer.style.position = 'static';
+});
 
 const password = document.getElementById('password');
 

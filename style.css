@@ -202,8 +202,10 @@ label {
 .form-input input {
     font-family: inherit;
     width: 220px;
-    padding: 3px 10px;
+    height: 30px;
     font-size: 14px;
+    outline: none;
+    padding-left: 8px;
 }
 
 .form-input select {
@@ -248,6 +250,16 @@ label {
     border-radius: 8px;
 }
 
+#password-info {
+    font-size: 0.8rem;
+}
+
+#password-matching {
+    font-size: 0.8rem;
+    display: none;
+    color: red;
+}
+
 #form-btn:hover {
     cursor: pointer;
     background-color: #99a2db;;
@@ -288,3 +300,11 @@ footer {
 #toggle-pause:hover {
     cursor: pointer;
 }
+
+/* validation styling */
+input[type="text"]:valid,
+input[type="email"]:valid {
+    background: rgb(208, 250, 208);
+    border: 1px solid rgb(0, 150, 0);
+}
+

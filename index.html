@@ -39,7 +39,7 @@
             <p class="account-log-in">Already have an account? <span><a href="https://www.noggin.com/noggin-dora-the-explorer/" target="_blank">Log in</a></span></p>
         </main>
 
-        <form action="" class="form">
+        <form action="" class="form" onSubmit="return checkPassword(this)">
             <p class="form-heading">SIGN UP TO START YOUR ADVENTURE.</p>
             <div class="form-input">
                 <label for="first-name">FIRST NAME</label>
@@ -102,11 +102,13 @@
             </fieldset>
             <div class="form-input">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" pattern="^.{8,}$" required>
+                <p id="password-info">Must be at least 8 characters</p>
             </div>
             <div class="form-input">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <input type="password" name="confirmPassword" id="confirm-password" required>
+                <p id="password-matching">Passwords don't match.</p>
             </div>
             <button id="form-btn" type="submit">Create Account</button>
             <p class="login-para">Already have an account? <a href="https://www.noggin.com/noggin-dora-the-explorer/" target="_blank">Log in</a></p>
